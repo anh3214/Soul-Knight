@@ -156,6 +156,7 @@ MonoBehaviour:
   interations: 10
   walkLenght: 10
   startRandomlyEachIteration: 1
+  _tileMapVisualizer: {fileID: 1125053601}
 --- !u!4 &108797580
 Transform:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.09803922, g: 0.07450981, b: 0.078431375, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -507,6 +508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1125053600}
+  - component: {fileID: 1125053601}
   m_Layer: 0
   m_Name: TileMapVisualizer
   m_TagString: Untagged
@@ -529,6 +531,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1125053601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125053599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25be8affae93754494fadafc375586e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorTileMap: {fileID: 1827395757}
+  floorTile: {fileID: 11400000, guid: 471853985ed4b5242ad12af71ace0cf6, type: 2}
 --- !u!1 &1452926523
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +625,7 @@ GameObject:
   - component: {fileID: 1827395757}
   - component: {fileID: 1827395756}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
