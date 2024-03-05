@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: 6ff3aa51fdbb4a846bcbbcb99b6f088f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: SorceressLeftAttack02_Frame_0
+    originalName: 
+    pivot: {x: 0.5555556, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 44
+      width: 18
+      height: 32
+    spriteID: ad3dcda928997c8499208460f0d199ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 44}
+  - name: SorceressLeftAttack02_Frame_1
+    originalName: 
+    pivot: {x: 0.5416666, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 24
+      height: 32
+    spriteID: 5c9a1491ef00f1742accb0f94cd4e022
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 4}
+  - name: SorceressLeftAttack02_Frame_2
+    originalName: 
+    pivot: {x: 0.5217391, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 201
+      width: 23
+      height: 36
+    spriteID: 254d4c73ef21c48438df00932acc745c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 201}
+  - name: SorceressLeftAttack02_Frame_3
+    originalName: 
+    pivot: {x: 0.5217391, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 151
+      width: 23
+      height: 42
+    spriteID: ab048805f81bc154d87394bcfe3f7fdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 151}
+  - name: SorceressLeftAttack02_Frame_4
+    originalName: 
+    pivot: {x: 0.52500004, y: -0.14634146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 40
+      height: 41
+    spriteID: 407b57956bd1d4b49b83334e15652f98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: SorceressLeftAttack02_Frame_5
+    originalName: 
+    pivot: {x: 0.52500004, y: -0.14634146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 53
+      width: 40
+      height: 41
+    spriteID: c0b0a22fe59f438499f3264ce5a8da02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 53}
+  - name: SorceressLeftAttack02_Frame_6
+    originalName: 
+    pivot: {x: 0.52500004, y: -0.14634146}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 102
+      width: 40
+      height: 41
+    spriteID: 40f4e50bb22a31a4ab23b383861ba63d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 102}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -617444186
+    name: SorceressLeftAttack02
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: SorceressLeftAttack02_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 6
+        width: 18
+        height: 32
+      spriteId: ad3dcda928997c8499208460f0d199ae
+    - name: SorceressLeftAttack02_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 11
+        y: 6
+        width: 24
+        height: 32
+      spriteId: 5c9a1491ef00f1742accb0f94cd4e022
+    - name: SorceressLeftAttack02_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 12
+        y: 6
+        width: 23
+        height: 36
+      spriteId: 254d4c73ef21c48438df00932acc745c
+    - name: SorceressLeftAttack02_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 12
+        y: 6
+        width: 23
+        height: 42
+      spriteId: ab048805f81bc154d87394bcfe3f7fdb
+    - name: SorceressLeftAttack02_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 3
+        y: 6
+        width: 40
+        height: 41
+      spriteId: 407b57956bd1d4b49b83334e15652f98
+    - name: SorceressLeftAttack02_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 3
+        y: 6
+        width: 40
+        height: 41
+      spriteId: c0b0a22fe59f438499f3264ce5a8da02
+    - name: SorceressLeftAttack02_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 3
+        y: 6
+        width: 40
+        height: 41
+      spriteId: 40f4e50bb22a31a4ab23b383861ba63d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 48, y: 48}

@@ -1,35 +1,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class SimpleRandomWalkMapGenerator : MonoBehaviour
+public class SimpleRandomWalkMapGenerator : AsbtractGenerator
 {
-    [SerializeField] protected Vector2Int startPosition = Vector2Int.zero;
-    [SerializeField] private int interations = 10;
-    [SerializeField] public int walkLenght = 10;
-    [SerializeField] public bool startRandomlyEachIteration = true;
+    [SerializeField] private SimpleRandomWalkSO randomWalkSO;
 
-
-    [SerializeField] private TileMapVisualizer _tileMapVisualizer;
-
-
-    public void RunProceduralGeneration()
+    protected override void RunProceduralGenration()
     {
         HashSet<Vector2Int> floorPositions = RunRandomWalk();
-        _tileMapVisualizer.Clear();
-        _tileMapVisualizer.PaintFloorTiles(floorPositions);
+        tileMapVisualizer.Clear();
+        tileMapVisualizer.PaintFloorTiles(floorPositions);
     }
 
     protected HashSet<Vector2Int> RunRandomWalk()
     {
         var currenPosition = startPosition;
         HashSet<Vector2Int> florPositions = new HashSet<Vector2Int>();
-        for (int  i = 0;  i < interations;  i++)
+        for (int  i = 0;  i < randomWalkSO.interation;  i++)
         {
-            var path = ProveduralGenerationAlgorithms.SimpleRandomWolk(currenPosition, walkLenght);
+            var path = ProveduralGenerationAlgorithms.SimpleRandomWolk(currenPosition, randomWalkSO.walkLenght);
             florPositions.UnionWith(path);
-            if (startRandomlyEachIteration)
-                currenPosition = florPositions.ElementAt(Random.Range(0,florPositions.Count));
+            if (randomWalkSO.startRandomlyEachIteration)
+                currenPosition = florPositions.ElementAt(Random.Range(0, florPositions.Count));
         }
         return florPositions;
     }

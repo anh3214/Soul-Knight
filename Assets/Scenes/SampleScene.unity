@@ -152,11 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ac83d2e36e1ed4a8398b29b37af441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileMapVisualizer: {fileID: 1125053601}
   startPosition: {x: 0, y: 0}
-  interations: 10
-  walkLenght: 10
-  startRandomlyEachIteration: 1
-  _tileMapVisualizer: {fileID: 1125053601}
+  randomWalkSO: {fileID: 11400000, guid: e98323f78f3a8c5488b1511040971131, type: 2}
 --- !u!4 &108797580
 Transform:
   m_ObjectHideFlags: 0
@@ -348,8 +346,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 108797579}
-        m_TargetAssemblyTypeName: SimpleRandomWalkMapGenerator, Assembly-CSharp
-        m_MethodName: RunProceduralGeneration
+        m_TargetAssemblyTypeName: AsbtractGenerator, Assembly-CSharp
+        m_MethodName: GenerateDungeon
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -692,7 +690,7 @@ TilemapRenderer:
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
-  m_Mode: 0
+  m_Mode: 1
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!1839735485 &1827395757
@@ -758,10 +756,10 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027710549}
   m_Enabled: 1
-  m_CellSize: {x: 0.8659766, y: 1, z: 1}
+  m_CellSize: {x: 1, y: 1, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 1
-  m_CellSwizzle: 2
+  m_CellLayout: 0
+  m_CellSwizzle: 0
 --- !u!4 &2027710551
 Transform:
   m_ObjectHideFlags: 0
