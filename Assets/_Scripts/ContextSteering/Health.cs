@@ -6,12 +6,11 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     [SerializeField]
-    private int currentHealth, maxHealth;
+    public int currentHealth, maxHealth, currentShiled, maxShiled;
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
-    [SerializeField]
-    private bool isDead = false;
+    public bool isDead = false;
 
     public void InitializeHealth(int healthValue)
     {
@@ -26,17 +25,29 @@ public class Health : MonoBehaviour
             return;
         if (sender.layer == gameObject.layer)
             return;
+        if(currentShiled != 0)
+        {
+            currentShiled -= amount;
+        }
+        else
+        {
+            currentHealth -= amount;
+        }
 
-        currentHealth -= amount;
-
-        if (currentHealth > 0)
+        if (currentHealth  > 0 || currentShiled > 0)
         {
             OnHitWithReference?.Invoke(sender);
         }
         else
         {
             OnDeathWithReference?.Invoke(sender);
-            isDead = true;
+            if (sender.CompareTag("Player"))
+            {
+                GameObject game = GameObject.Find("CanvasOver");
+                GameOverScreen over = game.GetComponent<GameOverScreen>();
+                over.GameOver();
+            }
+            isDead = true; 
             Destroy(gameObject);
         }
     }

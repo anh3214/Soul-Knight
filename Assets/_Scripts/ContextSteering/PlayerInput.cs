@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +10,6 @@ public class PlayerInput : MonoBehaviour
     public UnityEvent<Vector2> OnMovementInput, OnPointerInput;
     public UnityEvent OnAttack;
 
-    //[SerializeField]
-    //private InputActionReference movement, attack, pointerPosition;
 
     private void Update()
     {

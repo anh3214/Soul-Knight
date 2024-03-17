@@ -77,7 +77,6 @@ public class WeaponParent : MonoBehaviour
         {
             if (collider.isTrigger == false)
                 continue;
-            //Debug.Log(collider.name);
             Health health;
             if(health = collider.GetComponent<Health>())
             {
