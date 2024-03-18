@@ -765,7 +765,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 665208459}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1571679466}
+        m_TargetAssemblyTypeName: GameOverScreen, NewAssembly
+        m_MethodName: ResetButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &665208459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +1055,7 @@ Transform:
   - {fileID: 1607766029}
   - {fileID: 355307592}
   - {fileID: 1571679462}
+  - {fileID: 1718122262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1118239120
@@ -1203,7 +1216,6 @@ GameObject:
   - component: {fileID: 1219129727}
   - component: {fileID: 1219129729}
   - component: {fileID: 1219129728}
-  - component: {fileID: 1219129730}
   m_Layer: 0
   m_Name: OverGame
   m_TagString: OverGame
@@ -1271,18 +1283,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219129726}
   m_CullTransparentMesh: 1
---- !u!114 &1219129730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219129726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 667ac731f195a514eb9d8691d21b731a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1441489759
 GameObject:
   m_ObjectHideFlags: 0
@@ -14233,8 +14233,9 @@ GameObject:
   - component: {fileID: 1571679465}
   - component: {fileID: 1571679464}
   - component: {fileID: 1571679463}
+  - component: {fileID: 1571679466}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: CanvasOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14323,6 +14324,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1571679466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571679461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667ac731f195a514eb9d8691d21b731a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOver: {fileID: 1219129726}
 --- !u!1 &1607766028
 GameObject:
   m_ObjectHideFlags: 0
@@ -25378,6 +25392,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1118239119}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1718122261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718122262}
+  - component: {fileID: 1718122263}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1718122262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718122261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1118239119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718122263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718122261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25b5653f0ccfbe45b8f4320f1ecd694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2334184184601206654, guid: bfdae5ea0a2bf4f4ba045235b0f22eb0, type: 3}
+  gatePrefab: {fileID: 91678326577516658, guid: 1c22b47f1087ad74a8e385f8a4bf73b3, type: 3}
+  distanceToPlayer: 10
 --- !u!1 &1789962508
 GameObject:
   m_ObjectHideFlags: 0
@@ -25460,7 +25521,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1789962511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1571679466}
+        m_TargetAssemblyTypeName: GameOverScreen, NewAssembly
+        m_MethodName: ExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1789962511
 MonoBehaviour:
   m_ObjectHideFlags: 0

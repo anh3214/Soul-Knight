@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 //using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
@@ -26,6 +27,14 @@ public class PlayerInput : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Camera.main.nearClipPlane;
         return Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Gate"))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     //private void OnEnable()

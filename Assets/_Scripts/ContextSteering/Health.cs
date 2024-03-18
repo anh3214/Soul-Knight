@@ -41,7 +41,7 @@ public class Health : MonoBehaviour
         else
         {
             OnDeathWithReference?.Invoke(sender);
-            if (sender.CompareTag("Player"))
+            if (gameObject.CompareTag("Player")&& gameObject.layer == 8)
             {
                 GameObject game = GameObject.Find("CanvasOver");
                 GameOverScreen over = game.GetComponent<GameOverScreen>();

@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(AbstractDungeonGenerator), true)]
 public class RandomDungeonGeneratorEditor : Editor
 {
@@ -22,3 +25,5 @@ public class RandomDungeonGeneratorEditor : Editor
         }
     }
 }
+#endif
+

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public class PrefabPlacer : MonoBehaviour
@@ -69,20 +71,12 @@ public class PrefabPlacer : MonoBehaviour
 
     public GameObject CreateObject(GameObject prefab, Vector3 placementPosition)
     {
+
         if (prefab == null)
             return null;
-        GameObject newItem;
+        GameObject newItemP;
         if (Application.isPlaying)
-        {
-            newItem = Instantiate(prefab, placementPosition, Quaternion.identity);
-        }
-        else
-        {
-            newItem = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
-            newItem.transform.position = placementPosition;
-            newItem.transform.rotation = Quaternion.identity;
-        }
-
-        return newItem;
+          return  Instantiate(prefab, placementPosition, Quaternion.identity);
+        return null;
     }
 }
